@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Citroën - DS7</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        #wrapper
+        {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        .step
+        {
+            position: relative;
+        }
+
+        #bg1
+        {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 1;
+            animation-duration: 1s;
+            animation-name: back_anime;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes back_anime
+        {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        #bg2
+        {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            animation-delay: 4s;
+            animation-duration: 2s;
+            animation-name: back_anime;
+            animation-fill-mode: forwards;
+        }
+
+        #boutton180
+        {
+            position: absolute;
+            width: 10%;
+            top: 39%;
+            left: 2%;
+        }
+
+        #boutton5_1
+        {
+            position: absolute;
+            top: 40%;
+            right: 10%;
+            width: 80%;
+        }
+
+        #boutton5_2
+        {
+            position: absolute;
+            bottom: 8%;
+            width: 90%;
+            right: 7%;
+        }
+
+        #cta
+        {
+            position: absolute;
+            bottom: 20%;
+            left: 100%;
+            width: 57%;
+            animation-duration: 1s;
+            animation-delay: 2.8s;
+            animation-name: slidecta;
+            animation-fill-mode: forwards;
+        }
+
+        #cta_2
+        {
+            position: absolute;
+            bottom: 13%;
+            width: 57%;
+            left: 100%;
+            animation-duration: 1s;
+            animation-delay: 3s;
+            animation-name: slidecta;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slidecta
+        {
+            0% {
+                left: 100%;
+            }
+            100% {
+                left: 18%;
+            }
+        }
+
+        #image180
+        {
+            width:180%;
+        }
+
+        #image180_2
+        {
+            width:254%;
+            background-color: white;
+        }
+
+        #indication
+        {
+            position: absolute;
+            width: 32%;
+            top: 40%;
+            left: 15%;
+        }
+
+        #logo
+        {
+            position: absolute;
+            width: 36%;
+            right: 29%;
+            top: 3%;
+            opacity:0;
+            animation-delay: 1.5s;
+            animation-duration: 2s;
+            animation-name: back_anime;
+            animation-fill-mode: forwards;
+        }
+
+        .step1
+        {
+            height: 100%;
+        }
+
+        .step2
+        {
+            height: 69%;
+        }
+
+        .step3
+        {
+            height: 45%;
+        }
+
+        .step4
+        {
+            height: 80%;
+        }
+
+        .step5
+        {
+            height: 61.5%;
+        }
+
+        .step6
+        {
+            height: 47%;
+            background-color: white;
+        }
+
+        #text
+        {
+            position: absolute;
+            top: 57%;
+            right: 100%;
+            width: 66%;
+            animation-duration: 1s;
+            animation-delay: 1.5s;
+            animation-name: slidetext;
+            animation-fill-mode: forwards;
+        }
+
+        #text1
+        {
+            position: absolute;
+            top: 69%;
+            right: 100%;
+            width: 66%;
+            animation-duration: 1s;
+            animation-delay: 1.7s;
+            animation-name: slidetext;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slidetext
+        {
+            0% {
+                right: 100%;
+            }
+            100% {
+                right: 17%;
+            }
+        }
+
+        #textbottom
+        {
+            position: absolute;
+            bottom: -4%;
+            width: 74%;
+            right: 11%;
+            animation-duration: 1s, 1s;
+            animation-delay: 4s,5.2s;
+            animation-name: up,wiggle;
+            animation-iteration-count: 1 , 3;
+            animation-fill-mode: forwards, forwards;
+        }
+
+        @keyframes up
+        {
+            0% {
+                bottom: -4%;
+            }
+            100% {
+                bottom: 5%;
+            }
+        }
+
+        @keyframes wiggle
+        {
+            0% {
+                bottom: 5%;
+            }
+            75% {
+                bottom: 4%;
+            }
+            100%{
+                bottom: 6%;
+            }
+        }
+
+        #text1_2
+        {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+
+        #text2
+        {
+            position: absolute;
+            width: 47%;
+            right: 78%;
+            top: 8%;
+        }
+
+        .text2
+        {
+            animation-duration: 3s;
+            animation-name: slideright;
+            animation-fill-mode: forwards;
+        }
+
+        #text3
+        {
+            width: 100%;
+        }
+
+        #text5_1
+        {
+            width: 90%;
+            top: 10%;
+            position: absolute;
+            left: 4%;
+        }
+        #text5_2
+        {
+            position: absolute;
+            width: 85%;
+            right: 8%;
+            bottom: 27%;
+        }
+
+        #text4_1
+        {
+            width: 100%;
+        }
+
+        #text1_1
+        {
+            position: absolute;
+            width: 70%;
+            left: 15%;
+            top: 9%;
+        }
+
+        #voiture
+        {
+            position: absolute;
+            width: 100%;
+            top:0;
+        }
+
+        #voiture2 
+        {
+            width: 47%;
+            position: absolute;
+            left: 78%;
+            top: 8%;
+        }
+
+        .voiture-anime 
+        {
+            animation-duration: 3s;
+            animation-name: slideleft;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes slideleft
+        {
+            0% {
+                left: 78%;
+            }
+            100% {
+                left: 53%;
+            }
+        }
+
+        @keyframes slideright
+        {
+            0% {
+                right: 78%;
+            }
+            100% {
+                right: 49%;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div id="wrapper">
+    <div class="step step1">
+        <img src="./step1/bg1.jpg" id="bg1">
+        <img src="./step1/bg2.jpg" id="bg2">
+        <img src="./step1/logo-psa.png" id="logo">
+        <img src="./step1/text.png" id="text">
+        <img src="./step1/text1.png" id="text1">
+        <img src="./step1/cta.png" id="cta">
+        <img src="./step1/cta_2.png" id="cta_2">
+        <img src="./step1/textbottom.png" id="textbottom">
+    </div>
+    <div class="step step2">
+        <img src="./step1/voiture.jpg" id="voiture">
+        <img src="./step1/text1_1.png" id="text1_1">
+        <img src="./step1/text1_2.jpg" id="text1_2">
+    </div>
+    <div class="step step3">
+        <img src="./step2/text2.png" id="text2">
+        <img src="./step2/voiture2.png" id="voiture2" >
+    </div>
+    <div class="step step4">
+        <img src="./step3/text3.jpg" id="text3" >
+        <img src="./step3/image180.jpg" id="image180" >
+        <img src="./step3/boutton180.png" id="boutton180" >
+        <img src="./step3/indication.png" id="indication" >
+    </div>
+    <div class="step step5">
+        <img src="./step4/text4_1.jpg" id="text4_1" >
+        <img src="./step4/image180_2.jpg" id="image180_2" >
+    </div>
+    <div class="step step6">
+        <img src="./step5/text5_1.png" id="text5_1" >
+        <img src="./step5/text5_2.png" id="text5_2" >
+        <img src="./step5/boutton5_1.png" id="boutton5_1" >
+        <img src="./step5/boutton5_2.png" id="boutton5_2" >
+    </div>
+</div>
+<div id="bar"></div>
+
+<script type="text/javascript">
+    window.addEventListener("load", function() {
+
+        console.log("Toutes les ressources sont chargées !");
+
+        // Récupération du wrapper
+
+        var wrapper = document.getElementById('wrapper')
+        var voiture2 = document.getElementById('voiture2')
+        var text2 = document.getElementById('text2')
+
+        function initialisation() {
+            wrapper.addEventListener('scroll', scroll)
+        }
+
+        function scroll() {
+            console.log(wrapper.scrollTop)
+            var scroll = wrapper.scrollTop;
+
+            if(scroll > 1700 && scroll < 3110)
+            {
+                voiture2.classList.add('voiture-anime');
+                text2.classList.add('text2');
+            }else
+            {
+                voiture2.classList.remove('voiture-anime');
+                text2.classList.remove('text2');
+            }
+        }
+        initialisation()
+    });
+</script>
+
+</body>
+</html>
